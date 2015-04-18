@@ -496,6 +496,7 @@
 				A258ABAF1AE30DFD00AAA6C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A258ABB01AE30DFD00AAA6C5 /* Build configuration list for PBXNativeTarget "JsonSerializerTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +505,7 @@
 				A258ABB21AE30DFD00AAA6C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A258ABCB1AE30E1600AAA6C5 /* Build configuration list for PBXNativeTarget "JsonSerializer-OSX" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +514,7 @@
 				A258ABCD1AE30E1600AAA6C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
