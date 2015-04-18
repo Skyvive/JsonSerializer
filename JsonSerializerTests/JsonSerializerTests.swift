@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Skyvive. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 import XCTest
 
 class JsonSerializerTests: XCTestCase {

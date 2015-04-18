@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Skyvive. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 //! Project version number for JsonSerializer.
 FOUNDATION_EXPORT double JsonSerializerVersionNumber;
