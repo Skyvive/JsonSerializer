@@ -7,30 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A258ABA31AE30DFD00AAA6C5 /* JsonSerializer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A258AB971AE30DFD00AAA6C5 /* JsonSerializer.framework */; };
 		A258ABBD1AE30E1600AAA6C5 /* JsonSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = A258ABBC1AE30E1600AAA6C5 /* JsonSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A258ABD11AE30FB200AAA6C5 /* JsonSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = A258ABBC1AE30E1600AAA6C5 /* JsonSerializer.h */; };
+		A258ABD11AE30FB200AAA6C5 /* JsonSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = A258ABBC1AE30E1600AAA6C5 /* JsonSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A258ABD61AE3141500AAA6C5 /* JsonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258ABD51AE3141500AAA6C5 /* JsonSerializer.swift */; };
+		A258ABD71AE3141500AAA6C5 /* JsonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258ABD51AE3141500AAA6C5 /* JsonSerializer.swift */; };
+		A258ABD91AE3152200AAA6C5 /* JsonValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258ABD81AE3152200AAA6C5 /* JsonValue.swift */; };
+		A258ABDA1AE3152200AAA6C5 /* JsonValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258ABD81AE3152200AAA6C5 /* JsonValue.swift */; };
+		A258ABDC1AE3154B00AAA6C5 /* JsonMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258ABDB1AE3154B00AAA6C5 /* JsonMapper.swift */; };
+		A258ABDD1AE3154B00AAA6C5 /* JsonMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258ABDB1AE3154B00AAA6C5 /* JsonMapper.swift */; };
+		A258ABE71AE31AE700AAA6C5 /* JsonSerializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258ABE61AE31AE700AAA6C5 /* JsonSerializerTests.swift */; };
+		A258ABE81AE31AE700AAA6C5 /* JsonSerializer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A258AB971AE30DFD00AAA6C5 /* JsonSerializer.framework */; };
+		A258ABF11AE3221300AAA6C5 /* Mappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258ABF01AE3221300AAA6C5 /* Mappers.swift */; };
+		A258ABF21AE3221300AAA6C5 /* Mappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258ABF01AE3221300AAA6C5 /* Mappers.swift */; };
+		A258ABF71AE33E4700AAA6C5 /* JsonSerializer+Mappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258ABF61AE33E4700AAA6C5 /* JsonSerializer+Mappers.swift */; };
+		A258ABF81AE33E4700AAA6C5 /* JsonSerializer+Mappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258ABF61AE33E4700AAA6C5 /* JsonSerializer+Mappers.swift */; };
+		A258ABFA1AE3404A00AAA6C5 /* String+Subscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258ABF91AE3404A00AAA6C5 /* String+Subscripting.swift */; };
+		A258ABFB1AE3404A00AAA6C5 /* String+Subscripting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258ABF91AE3404A00AAA6C5 /* String+Subscripting.swift */; };
+		A258ABFD1AE340D200AAA6C5 /* JsonSerializer+Deserialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258ABFC1AE340D200AAA6C5 /* JsonSerializer+Deserialization.swift */; };
+		A258ABFE1AE340D200AAA6C5 /* JsonSerializer+Deserialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258ABFC1AE340D200AAA6C5 /* JsonSerializer+Deserialization.swift */; };
+		A258AC001AE3415700AAA6C5 /* JsonSerializer+KeyMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258ABFF1AE3415700AAA6C5 /* JsonSerializer+KeyMapping.swift */; };
+		A258AC011AE3415700AAA6C5 /* JsonSerializer+KeyMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258ABFF1AE3415700AAA6C5 /* JsonSerializer+KeyMapping.swift */; };
+		A258AC031AE3479600AAA6C5 /* JsonSerializer+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258AC021AE3479600AAA6C5 /* JsonSerializer+Serialization.swift */; };
+		A258AC041AE3479600AAA6C5 /* JsonSerializer+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A258AC021AE3479600AAA6C5 /* JsonSerializer+Serialization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A258ABA41AE30DFD00AAA6C5 /* PBXContainerItemProxy */ = {
+		A258ABE91AE31AE700AAA6C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A258AB8E1AE30DFD00AAA6C5 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A258AB961AE30DFD00AAA6C5;
-			remoteInfo = JsonSerializer;
+			remoteInfo = "JsonSerializer-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A258AB971AE30DFD00AAA6C5 /* JsonSerializer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JsonSerializer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A258ABA21AE30DFD00AAA6C5 /* JsonSerializerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonSerializerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A258ABB81AE30E1600AAA6C5 /* JsonSerializer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JsonSerializer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A258ABBB1AE30E1600AAA6C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A258ABBC1AE30E1600AAA6C5 /* JsonSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonSerializer.h; sourceTree = "<group>"; };
-		A258ABC81AE30E1600AAA6C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A258ABC91AE30E1600AAA6C5 /* JsonSerializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonSerializerTests.swift; sourceTree = "<group>"; };
 		A258ABD41AE3105800AAA6C5 /* JsonSerializer.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = JsonSerializer.podspec; sourceTree = "<group>"; };
+		A258ABD51AE3141500AAA6C5 /* JsonSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSerializer.swift; sourceTree = "<group>"; };
+		A258ABD81AE3152200AAA6C5 /* JsonValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonValue.swift; sourceTree = "<group>"; };
+		A258ABDB1AE3154B00AAA6C5 /* JsonMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonMapper.swift; sourceTree = "<group>"; };
+		A258ABE21AE31AE700AAA6C5 /* JsonSerializerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonSerializerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A258ABE51AE31AE700AAA6C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A258ABE61AE31AE700AAA6C5 /* JsonSerializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonSerializerTests.swift; sourceTree = "<group>"; };
+		A258ABF01AE3221300AAA6C5 /* Mappers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mappers.swift; sourceTree = "<group>"; };
+		A258ABF61AE33E4700AAA6C5 /* JsonSerializer+Mappers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JsonSerializer+Mappers.swift"; sourceTree = "<group>"; };
+		A258ABF91AE3404A00AAA6C5 /* String+Subscripting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Subscripting.swift"; sourceTree = "<group>"; };
+		A258ABFC1AE340D200AAA6C5 /* JsonSerializer+Deserialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JsonSerializer+Deserialization.swift"; sourceTree = "<group>"; };
+		A258ABFF1AE3415700AAA6C5 /* JsonSerializer+KeyMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JsonSerializer+KeyMapping.swift"; sourceTree = "<group>"; };
+		A258AC021AE3479600AAA6C5 /* JsonSerializer+Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JsonSerializer+Serialization.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,18 +69,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A258AB9F1AE30DFD00AAA6C5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A258ABA31AE30DFD00AAA6C5 /* JsonSerializer.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A258ABB41AE30E1600AAA6C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A258ABDF1AE31AE700AAA6C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A258ABE81AE31AE700AAA6C5 /* JsonSerializer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +92,7 @@
 			children = (
 				A258ABD41AE3105800AAA6C5 /* JsonSerializer.podspec */,
 				A258ABB91AE30E1600AAA6C5 /* JsonSerializer */,
-				A258ABC61AE30E1600AAA6C5 /* JsonSerializerTests */,
+				A258ABE31AE31AE700AAA6C5 /* JsonSerializerTests */,
 				A258AB981AE30DFD00AAA6C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,8 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				A258AB971AE30DFD00AAA6C5 /* JsonSerializer.framework */,
-				A258ABA21AE30DFD00AAA6C5 /* JsonSerializerTests.xctest */,
 				A258ABB81AE30E1600AAA6C5 /* JsonSerializer.framework */,
+				A258ABE21AE31AE700AAA6C5 /* JsonSerializerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				A258ABBC1AE30E1600AAA6C5 /* JsonSerializer.h */,
+				A258ABD51AE3141500AAA6C5 /* JsonSerializer.swift */,
+				A258ABDB1AE3154B00AAA6C5 /* JsonMapper.swift */,
+				A258ABD81AE3152200AAA6C5 /* JsonValue.swift */,
+				A258ABEE1AE31FD500AAA6C5 /* Internal */,
 				A258ABBA1AE30E1600AAA6C5 /* Supporting Files */,
 			);
 			path = JsonSerializer;
@@ -96,21 +128,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A258ABC61AE30E1600AAA6C5 /* JsonSerializerTests */ = {
+		A258ABE31AE31AE700AAA6C5 /* JsonSerializerTests */ = {
 			isa = PBXGroup;
 			children = (
-				A258ABC91AE30E1600AAA6C5 /* JsonSerializerTests.swift */,
-				A258ABC71AE30E1600AAA6C5 /* Supporting Files */,
+				A258ABE61AE31AE700AAA6C5 /* JsonSerializerTests.swift */,
+				A258ABE41AE31AE700AAA6C5 /* Supporting Files */,
 			);
 			path = JsonSerializerTests;
 			sourceTree = "<group>";
 		};
-		A258ABC71AE30E1600AAA6C5 /* Supporting Files */ = {
+		A258ABE41AE31AE700AAA6C5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A258ABC81AE30E1600AAA6C5 /* Info.plist */,
+				A258ABE51AE31AE700AAA6C5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A258ABEE1AE31FD500AAA6C5 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				A258AC021AE3479600AAA6C5 /* JsonSerializer+Serialization.swift */,
+				A258ABFC1AE340D200AAA6C5 /* JsonSerializer+Deserialization.swift */,
+				A258ABF61AE33E4700AAA6C5 /* JsonSerializer+Mappers.swift */,
+				A258ABFF1AE3415700AAA6C5 /* JsonSerializer+KeyMapping.swift */,
+				A258ABF91AE3404A00AAA6C5 /* String+Subscripting.swift */,
+				A258ABF01AE3221300AAA6C5 /* Mappers.swift */,
+			);
+			name = Internal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,24 +198,6 @@
 			productReference = A258AB971AE30DFD00AAA6C5 /* JsonSerializer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A258ABA11AE30DFD00AAA6C5 /* JsonSerializerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A258ABB01AE30DFD00AAA6C5 /* Build configuration list for PBXNativeTarget "JsonSerializerTests" */;
-			buildPhases = (
-				A258AB9E1AE30DFD00AAA6C5 /* Sources */,
-				A258AB9F1AE30DFD00AAA6C5 /* Frameworks */,
-				A258ABA01AE30DFD00AAA6C5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A258ABA51AE30DFD00AAA6C5 /* PBXTargetDependency */,
-			);
-			name = JsonSerializerTests;
-			productName = JsonSerializerTests;
-			productReference = A258ABA21AE30DFD00AAA6C5 /* JsonSerializerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		A258ABB71AE30E1600AAA6C5 /* JsonSerializer-OSX */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A258ABCB1AE30E1600AAA6C5 /* Build configuration list for PBXNativeTarget "JsonSerializer-OSX" */;
@@ -189,6 +216,24 @@
 			productReference = A258ABB81AE30E1600AAA6C5 /* JsonSerializer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		A258ABE11AE31AE700AAA6C5 /* JsonSerializerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A258ABEB1AE31AE700AAA6C5 /* Build configuration list for PBXNativeTarget "JsonSerializerTests" */;
+			buildPhases = (
+				A258ABDE1AE31AE700AAA6C5 /* Sources */,
+				A258ABDF1AE31AE700AAA6C5 /* Frameworks */,
+				A258ABE01AE31AE700AAA6C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A258ABEA1AE31AE700AAA6C5 /* PBXTargetDependency */,
+			);
+			name = JsonSerializerTests;
+			productName = JsonSerializerTests;
+			productReference = A258ABE21AE31AE700AAA6C5 /* JsonSerializerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,10 +246,10 @@
 					A258AB961AE30DFD00AAA6C5 = {
 						CreatedOnToolsVersion = 6.3;
 					};
-					A258ABA11AE30DFD00AAA6C5 = {
+					A258ABB71AE30E1600AAA6C5 = {
 						CreatedOnToolsVersion = 6.3;
 					};
-					A258ABB71AE30E1600AAA6C5 = {
+					A258ABE11AE31AE700AAA6C5 = {
 						CreatedOnToolsVersion = 6.3;
 					};
 				};
@@ -223,20 +268,13 @@
 			targets = (
 				A258AB961AE30DFD00AAA6C5 /* JsonSerializer-iOS */,
 				A258ABB71AE30E1600AAA6C5 /* JsonSerializer-OSX */,
-				A258ABA11AE30DFD00AAA6C5 /* JsonSerializerTests */,
+				A258ABE11AE31AE700AAA6C5 /* JsonSerializerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A258AB951AE30DFD00AAA6C5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A258ABA01AE30DFD00AAA6C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -250,6 +288,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A258ABE01AE31AE700AAA6C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,13 +302,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A258AB9E1AE30DFD00AAA6C5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A258AC031AE3479600AAA6C5 /* JsonSerializer+Serialization.swift in Sources */,
+				A258ABF11AE3221300AAA6C5 /* Mappers.swift in Sources */,
+				A258ABFD1AE340D200AAA6C5 /* JsonSerializer+Deserialization.swift in Sources */,
+				A258ABD61AE3141500AAA6C5 /* JsonSerializer.swift in Sources */,
+				A258ABF71AE33E4700AAA6C5 /* JsonSerializer+Mappers.swift in Sources */,
+				A258ABFA1AE3404A00AAA6C5 /* String+Subscripting.swift in Sources */,
+				A258ABDC1AE3154B00AAA6C5 /* JsonMapper.swift in Sources */,
+				A258AC001AE3415700AAA6C5 /* JsonSerializer+KeyMapping.swift in Sources */,
+				A258ABD91AE3152200AAA6C5 /* JsonValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,16 +318,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A258AC041AE3479600AAA6C5 /* JsonSerializer+Serialization.swift in Sources */,
+				A258ABF21AE3221300AAA6C5 /* Mappers.swift in Sources */,
+				A258ABFE1AE340D200AAA6C5 /* JsonSerializer+Deserialization.swift in Sources */,
+				A258ABD71AE3141500AAA6C5 /* JsonSerializer.swift in Sources */,
+				A258ABF81AE33E4700AAA6C5 /* JsonSerializer+Mappers.swift in Sources */,
+				A258ABFB1AE3404A00AAA6C5 /* String+Subscripting.swift in Sources */,
+				A258ABDD1AE3154B00AAA6C5 /* JsonMapper.swift in Sources */,
+				A258AC011AE3415700AAA6C5 /* JsonSerializer+KeyMapping.swift in Sources */,
+				A258ABDA1AE3152200AAA6C5 /* JsonValue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A258ABDE1AE31AE700AAA6C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A258ABE71AE31AE700AAA6C5 /* JsonSerializerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A258ABA51AE30DFD00AAA6C5 /* PBXTargetDependency */ = {
+		A258ABEA1AE31AE700AAA6C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A258AB961AE30DFD00AAA6C5 /* JsonSerializer-iOS */;
-			targetProxy = A258ABA41AE30DFD00AAA6C5 /* PBXContainerItemProxy */;
+			targetProxy = A258ABE91AE31AE700AAA6C5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -377,6 +441,7 @@
 		A258ABAE1AE30DFD00AAA6C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -386,12 +451,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = JsonSerializer;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		A258ABAF1AE30DFD00AAA6C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -404,39 +471,10 @@
 			};
 			name = Release;
 		};
-		A258ABB11AE30DFD00AAA6C5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = JsonSerializerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		A258ABB21AE30DFD00AAA6C5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = JsonSerializerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		A258ABCC1AE30E1600AAA6C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -455,12 +493,14 @@
 				PRODUCT_NAME = JsonSerializer;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		A258ABCD1AE30E1600AAA6C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -474,6 +514,36 @@
 				PRODUCT_NAME = JsonSerializer;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A258ABEC1AE31AE700AAA6C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JsonSerializerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A258ABED1AE31AE700AAA6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JsonSerializerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -498,15 +568,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A258ABB01AE30DFD00AAA6C5 /* Build configuration list for PBXNativeTarget "JsonSerializerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A258ABB11AE30DFD00AAA6C5 /* Debug */,
-				A258ABB21AE30DFD00AAA6C5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		A258ABCB1AE30E1600AAA6C5 /* Build configuration list for PBXNativeTarget "JsonSerializer-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -515,6 +576,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A258ABEB1AE31AE700AAA6C5 /* Build configuration list for PBXNativeTarget "JsonSerializerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A258ABEC1AE31AE700AAA6C5 /* Debug */,
+				A258ABED1AE31AE700AAA6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
