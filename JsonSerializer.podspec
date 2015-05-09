@@ -10,14 +10,14 @@ Pod::Spec.new do |s|
 
 
   s.name = "JsonSerializer"
-  s.version = "0.8.0"
+  s.version = "0.8.1"
   s.summary = "Swift JSON Serialization Made Easy"
   s.homepage = "https://github.com/Skyvive/JsonSerializer"
   s.license = { :type => "MIT", :file => "LICENSE" }
   s.author = { "Brad Hilton" => "brad.hilton.nw@gmail.com" }
   s.ios.deployment_target = "8.3"
   s.osx.deployment_target = "10.9"
-  s.source = { :git => "https://github.com/Skyvive/JsonSerializer.git", :tag => "0.8.0" }
+  s.source = { :git => "https://github.com/Skyvive/JsonSerializer.git", :tag => "0.8.1" }
   s.source_files  = "JsonSerializer", "JsonSerializer/**/*.{swift,h,m}"
   s.requires_arc = true
 
