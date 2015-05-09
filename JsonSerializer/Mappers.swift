@@ -14,7 +14,9 @@ class NSObjectMapper: JsonMapper {
     
     var objectType: NSObject.Type = NSObject.self
     
-    var type: Any.Type { get { return NSObject.self } }
+    var type: Any.Type { return NSObject.self }
+    
+    var sampleInstance: Any { return objectType() }
     
     func propertyValueFromJsonValue(value: JsonValue) -> AnyObject? {
         switch value {
@@ -40,7 +42,9 @@ class NSObjectMapper: JsonMapper {
 
 class NSStringMapper: JsonMapper {
     
-    var type: Any.Type { get { return NSString.self } }
+    var type: Any.Type { return NSString.self }
+    
+    var sampleInstance: Any { return NSString() }
     
     func propertyValueFromJsonValue(value: JsonValue) -> AnyObject? {
         switch value {
@@ -55,7 +59,9 @@ class NSStringMapper: JsonMapper {
 
 class NSNumberMapper: JsonMapper {
     
-    var type: Any.Type { get { return NSNumber.self } }
+    var type: Any.Type { return NSNumber.self }
+    
+    var sampleInstance: Any { return NSNumber() }
     
     func propertyValueFromJsonValue(value: JsonValue) -> AnyObject? {
         switch value {
@@ -71,7 +77,9 @@ class NSNumberMapper: JsonMapper {
 
 class NSArrayMapper: JsonMapper {
     
-    var type: Any.Type { get { return NSArray.self } }
+    var type: Any.Type { return NSArray.self }
+    
+    var sampleInstance: Any { return NSArray() }
     
     func propertyValueFromJsonValue(value: JsonValue) -> AnyObject? {
         switch value {
@@ -86,7 +94,9 @@ class NSArrayMapper: JsonMapper {
 
 class NSDictionaryMapper: JsonMapper {
     
-    var type: Any.Type { get { return NSDictionary.self } }
+    var type: Any.Type { return NSDictionary.self }
+    
+    var sampleInstance: Any { return NSDictionary() }
     
     func propertyValueFromJsonValue(value: JsonValue) -> AnyObject? {
         switch value {
@@ -105,9 +115,9 @@ class JsonGenericMapper: JsonMapper {
     
     var submappers = [JsonMapper]()
     
-    var type: Any.Type { get { return JsonGenericMapper.self } }
+    var type: Any.Type { return JsonGenericMapper.self }
     
-    var sampleInstance: Any? { get { return JsonGenericMapper() } }
+    var sampleInstance: Any { return JsonGenericMapper() }
     
     func propertyValueFromJsonValue(value: JsonValue) -> AnyObject? { return nil }
     
@@ -117,7 +127,9 @@ class JsonGenericMapper: JsonMapper {
 
 class OptionalMapper: JsonGenericMapper {
     
-    override var type: Any.Type { get { return Optional<AnyObject>.self } }
+    override var type: Any.Type { return Optional<AnyObject>.self }
+    
+    override var sampleInstance: Any { return submappers[0].sampleInstance }
     
     override func propertyValueFromJsonValue(value: JsonValue) -> AnyObject? {
         if submappers.count > 0 {
@@ -139,7 +151,9 @@ class OptionalMapper: JsonGenericMapper {
 
 class DictionaryMapper: JsonGenericMapper {
     
-    override var type: Any.Type { get { return Dictionary<String, AnyObject>.self } }
+    override var type: Any.Type { return Dictionary<String, AnyObject>.self }
+    
+    override var sampleInstance: Any { return NSDictionary() }
     
     override func propertyValueFromJsonValue(value: JsonValue) -> AnyObject? {
         switch value {
@@ -188,7 +202,9 @@ class DictionaryMapper: JsonGenericMapper {
 
 class ArrayMapper: JsonGenericMapper {
     
-    override var type: Any.Type { get { return Array<AnyObject>.self } }
+    override var type: Any.Type { return Array<AnyObject>.self }
+    
+    override var sampleInstance: Any { return [submappers[0].sampleInstance] }
     
     override func propertyValueFromJsonValue(value: JsonValue) -> AnyObject? {
         switch value {
@@ -233,7 +249,9 @@ class ArrayMapper: JsonGenericMapper {
 
 class StringMapper: JsonMapper {
     
-    var type: Any.Type { get { return String.self } }
+    var type: Any.Type { return String.self }
+    
+    var sampleInstance: Any { return String() }
     
     func propertyValueFromJsonValue(value: JsonValue) -> AnyObject? {
         switch value {
@@ -249,7 +267,9 @@ class StringMapper: JsonMapper {
 
 class IntMapper: JsonMapper {
     
-    var type: Any.Type { get { return Int.self } }
+    var type: Any.Type { return Int.self }
+    
+    var sampleInstance: Any { return Int() }
     
     func propertyValueFromJsonValue(value: JsonValue) -> AnyObject? {
         switch value {
@@ -271,7 +291,9 @@ class IntMapper: JsonMapper {
 
 class FloatMapper: JsonMapper {
     
-    var type: Any.Type { get { return Float.self } }
+    var type: Any.Type { return Float.self }
+    
+    var sampleInstance: Any { return Float() }
     
     func propertyValueFromJsonValue(value: JsonValue) -> AnyObject? {
         switch value {
@@ -293,7 +315,9 @@ class FloatMapper: JsonMapper {
 
 class DoubleMapper: JsonMapper {
     
-    var type: Any.Type { get { return Double.self } }
+    var type: Any.Type { return Double.self }
+    
+    var sampleInstance: Any { return Double() }
     
     func propertyValueFromJsonValue(value: JsonValue) -> AnyObject? {
         switch value {
@@ -315,7 +339,9 @@ class DoubleMapper: JsonMapper {
 
 class BoolMapper: JsonMapper {
     
-    var type: Any.Type { get { return Bool.self } }
+    var type: Any.Type { return Bool.self }
+    
+    var sampleInstance: Any { return Bool() }
     
     func propertyValueFromJsonValue(value: JsonValue) -> AnyObject? {
         switch value {

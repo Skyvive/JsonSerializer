@@ -19,11 +19,13 @@ class JsonSerializerTests: XCTestCase {
         JsonSerializer.loadDictionary(SampleData.jsonData, intoObject: user)
         let newData = "\(JsonSerializer.dictionaryFrom(user))"
         XCTAssert(originalData == newData, "Conversion between dictionary and model failed")
+        XCTAssert(JsonSerializer.validateDictionary(SampleData.jsonData, forObject: user), "Required keys missing from dictionary")
+        XCTAssert(JsonSerializer.validateObject(user), "Required properties missing from object")
     }
     
 }
 
-class User: NSObject, MapsUnderscoreCaseToCamelCase {
+class User: NSObject, MapsUnderscoreCaseToCamelCase, ValidateImplicitlyUnwrappedOptionals {
     var id: NSNumber!
     var name: String!
     var isPublic: Bool = false
@@ -32,6 +34,7 @@ class User: NSObject, MapsUnderscoreCaseToCamelCase {
     var ranking: Float = 0
     var spouse: User?
     var friends: [User]?
+    var bestFriend: User?
     var metadata: [String:[NSNumber]]?
 }
 

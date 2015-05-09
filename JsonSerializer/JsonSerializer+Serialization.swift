@@ -17,8 +17,9 @@ extension JsonSerializer {
         for (name, mirrorType) in properties(object) {
             if let mapper = mapperForType(mirrorType.valueType),
                 let value: AnyObject = valueForProperty(name, mirrorType: mirrorType, object: object) {
-                    if let jsonValue = mapper.jsonValueFromPropertyValue(value) {
-                        dictionary.setObject(jsonValue.value(), forKey: dictionaryKeyForPropertyKey(name, object: object))
+                    if let jsonValue = mapper.jsonValueFromPropertyValue(value),
+                        let key = dictionaryKeyForPropertyKey(name, object: object) {
+                        dictionary.setObject(jsonValue.value(), forKey: key)
                     }
             }
         }

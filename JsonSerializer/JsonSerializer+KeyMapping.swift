@@ -13,21 +13,35 @@ import Foundation
 extension JsonSerializer {
     
     class func propertyKeyForDictionaryKey(var key: String, object: NSObject) -> String? {
-        if object is MapsUnderscoreCaseToCamelCase {
+        if let object = object as? MapsCustomKeys,
+            let propertyKey = object.keyMapping[key] {
+            key = propertyKey
+        } else if object is MapsUnderscoreCaseToCamelCase {
             key = camelCaseStringFromUnderscoreString(key)
         }
-        if object.respondsToSelector(NSSelectorFromString(key)) {
+        if object.respondsToSelector(NSSelectorFromString(key)) && !anObject(object, ignoresKey: key) {
             return key
         } else {
             return nil
         }
     }
     
-    class func dictionaryKeyForPropertyKey(key: String, object: NSObject) -> String {
-        if object is MapsUnderscoreCaseToCamelCase {
-            return underscoreStringFromCamelCaseString(key)
+    class func dictionaryKeyForPropertyKey(key: String, object: NSObject) -> String? {
+        if anObject(object, ignoresKey: key) {
+            return nil
         } else {
-            return key
+            if let object = object as? MapsCustomKeys {
+                for (dictionaryKey, propertyKey) in object.keyMapping {
+                    if propertyKey == key {
+                        return dictionaryKey
+                    }
+                }
+            }
+            if object is MapsUnderscoreCaseToCamelCase {
+                return underscoreStringFromCamelCaseString(key)
+            } else {
+                return key
+            }
         }
     }
     
@@ -61,6 +75,23 @@ extension JsonSerializer {
     
     private class func rangeForString(string: String) -> Range<String.Index> {
         return Range<String.Index>(start: string.startIndex, end: string.endIndex)
+    }
+    
+    private class func anObject(object: NSObject, ignoresKey: String) -> Bool {
+        for key in ignoredPropertyKeysForObject(object) {
+            if key == ignoresKey {
+                return true
+            }
+        }
+        return false
+    }
+    
+    private class func ignoredPropertyKeysForObject(object: NSObject) -> [String] {
+        var ignoredPropertyKeys = ["super", "keyMapping", "ignoredKeys", "requiredKeys", "optionalKeys"]
+        if let object = object as? IgnoresKeys {
+            ignoredPropertyKeys += object.ignoredKeys
+        }
+        return ignoredPropertyKeys
     }
     
 }

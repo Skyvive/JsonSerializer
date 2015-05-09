@@ -33,7 +33,7 @@ extension JsonSerializer {
         return nil
     }
     
-    class func properties(object: NSObject) -> [(String, MirrorType)] {
+    class func properties(object: Any) -> [(String, MirrorType)] {
         var properties = [(String, MirrorType)]()
         for i in 1..<reflect(object).count {
             properties.append(reflect(object)[i])

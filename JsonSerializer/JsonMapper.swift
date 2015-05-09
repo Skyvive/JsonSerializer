@@ -13,6 +13,9 @@ public protocol JsonMapper {
     // Required read-only property that returns the mapper type
     var type: Any.Type { get }
     
+    // Required read-only property that returns a sample instance of the mapper type
+    var sampleInstance: Any { get }
+    
     // Required method that returns an instance of this mapper's type given a JsonValue input
     func propertyValueFromJsonValue(value: JsonValue) -> AnyObject?
     
