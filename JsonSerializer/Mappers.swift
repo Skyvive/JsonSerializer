@@ -61,7 +61,7 @@ class NSNumberMapper: JsonMapper {
     
     var type: Any.Type { return NSNumber.self }
     
-    var sampleInstance: Any { return NSNumber() }
+    var sampleInstance: Any { return NSNumber(integer: 0) }
     
     func propertyValueFromJsonValue(value: JsonValue) -> AnyObject? {
         switch value {
